@@ -15,9 +15,9 @@ from telegram.ext import (
 
 # ====================== НАСТРОЙКИ ======================
 BOT_TOKEN = os.getenv("8617261748:AAHK4y3VUoNld9pKjskmxWUg0WFSIsU8YoI")
-ADMIN_ID = int(os.getenv("7581532329", "0"))          # ← ОБЯЗАТЕЛЬНО укажи свой Telegram ID
-ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "@твой_юзернейм")
-WEBINAR_LINK = os.getenv("WEBINAR_LINK", "https://zoom.us/j/ВАША_ССЫЛКА")  # ссылка на Zoom / Telegram-вебинар
+ADMIN_ID = int(os.getenv("ADMIN_ID", "7581532329"))          # ← ОБЯЗАТЕЛЬНО укажи свой Telegram ID
+ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "@ExemdmaA")
+WEBINAR_LINK = os.getenv("WEBINAR_LINK", "https://t.me/ExemdmaA")  # ссылка на Zoom / Telegram-вебинар
 
 if not BOT_TOKEN or ADMIN_ID == 0:
     raise ValueError("❌ Установи переменные окружения: BOT_TOKEN, ADMIN_ID (и желательно WEBINAR_LINK, ADMIN_USERNAME)")
